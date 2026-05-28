@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+// Menambahkan fungsi untuk menampilkan dashboard  
     public function dashboard()
     {
         $user = Auth::user();
