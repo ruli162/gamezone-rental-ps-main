@@ -1,0 +1,98 @@
+# 🎮 GAMEZONE - Aplikasi Web Booking Rental PlayStation
+
+![GAMEZONE Screenshot](screenshot.png)
+
+**Proyek UAS:** Aplikasi Web Booking Rental PlayStation (GAMEZONE) berbasis *website* responsif dengan fitur autentikasi, manajemen inventaris, dan sistem penyewaan (booking) jadwal.
+
+---
+
+## 👥 Tim Pengembang (Kelompok)
+
+| Nama Anggota | Peran / Fokus Pekerjaan |
+| :--- | :--- |
+| **Ruli** | Project Manager & System Analyst |
+| **Hafidhin Adinata** | UI/UX Designer & Frontend Developer |
+| **M. Risal** | Database Administrator (DBA) & ERD Designer |
+| **Geraldhino** | Backend Developer & API Integrator |
+
+---
+
+## 🚀 Fitur Utama
+
+- 🔐 **Sistem Autentikasi & Multi-role:** Pemisahan hak akses antara Admin dan Pelanggan.
+- 📊 **Dashboard Admin:** Pengelolaan data pelanggan dan manajemen inventaris mesin PS (PS5, PS4, PS3).
+- 📅 **Sistem Booking:** Pemesanan jadwal sewa PlayStation secara *real-time*.
+- 💰 **Riwayat Transaksi:** Pencatatan histori penyewaan beserta kalkulasi harga otomatis.
+- 💬 **WhatsApp Integration:** Tombol *chat* langsung untuk menghubungi admin.
+
+---
+
+## 💻 Teknologi yang Digunakan
+
+- **Backend:** Laravel Framework (PHP)
+- **Frontend:** Tailwind CSS / Bootstrap (Blade Templating)
+- **Database:** MySQL
+- **Tools:** Git, GitHub, VSCode
+
+---
+
+## 🛠️ Cara Instalasi (Lokal)
+
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer Anda:
+
+1. **Clone Repositori:**
+   ```bash
+   git clone https://github.com/ruli162/gamezone-rental-ps.git
+   cd gamezone-rental-ps
+   ```
+
+2. **Install Dependensi:**
+   Pastikan Anda sudah menginstall Composer dan Node.js.
+   ```bash
+   composer install
+   npm install
+   ```
+
+3. **Pengaturan Environment (.env):**
+   Salin file `.env.example` menjadi `.env`.
+   ```bash
+   cp .env.example .env
+   ```
+
+4. **Generate Application Key:**
+   ```bash
+   php artisan key:generate
+   ```
+
+5. **Pengaturan Database:**
+   - Buat database baru di MySQL/phpMyAdmin (contoh: `gamezone_db`).
+   - Buka file `.env`, lalu ubah konfigurasi database Anda:
+     ```env
+     DB_CONNECTION=mysql
+     DB_HOST=127.0.0.1
+     DB_PORT=3306
+     DB_DATABASE=gamezone_db
+     DB_USERNAME=root
+     DB_PASSWORD=
+     ```
+   - Import file `rental_ps_db.sql` ke dalam database Anda ATAU jalankan migrasi:
+     ```bash
+     php artisan migrate --seed
+     ```
+
+6. **Jalankan Aplikasi:**
+   Buka dua jendela terminal, lalu jalankan:
+   
+   *Terminal 1 (Menjalankan server PHP):*
+   ```bash
+   php artisan serve
+   ```
+   *Terminal 2 (Menjalankan Vite/Frontend build):*
+   ```bash
+   npm run dev
+   ```
+   
+   Buka `http://localhost:8000` di *browser* Anda untuk melihat hasilnya.
+
+---
+*Dibuat untuk memenuhi Tugas Akhir Semester.*
