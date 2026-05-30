@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // Menyempurnakan relasi tabel database untuk jadwal booking
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
