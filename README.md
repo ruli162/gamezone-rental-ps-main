@@ -1,7 +1,8 @@
 # 🎮 GAMEZONE - Aplikasi Web Booking Rental PlayStation
 
-
 **Proyek UAS:** Aplikasi Web Booking Rental PlayStation (GAMEZONE) berbasis _website_ responsif dengan fitur autentikasi, manajemen inventaris, dan sistem penyewaan (booking) jadwal.
+
+📥 **[Unduh Dokumen Laporan Proyek (SRS) Kelompok 4 Disini](docs/Laporan_SRS_Kelompok_4.pdf)**
 
 ---
 
@@ -122,7 +123,7 @@ _Dibuat untuk memenuhi Tugas Akhir Semester._
 
 Untuk keperluan pengujian aplikasi dan penilaian, silakan gunakan kredensial berikut untuk masuk sebagai Admin:
 
-- **Email:** adminrentalps@gamezone.com
+- **Email:** adminrentalps@gmail.com
 - **Password:** rahasia
 
 ## 📈 Manajemen Proyek (Agile Workflow)
@@ -130,3 +131,9 @@ Untuk keperluan pengujian aplikasi dan penilaian, silakan gunakan kredensial ber
 Progres pengerjaan tugas (_Issues_) dan pembagian kerja tim kami dikelola secara transparan menggunakan GitHub Projects.
 Silakan cek alur kerja (_Kanban Board_) kami pada tautan berikut:
 **[Lihat GameZone Development Board Disini](https://github.com/users/ruli162/projects/4/views/1)**
+
+## 📄 Dokumen Laporan Proyek (SRS)
+
+Untuk membaca rincian lengkap mengenai spesifikasi kebutuhan perangkat lunak (*Software Requirements Specification*), diagram alir, dan perancangan sistem, silakan unduh dokumen laporan kami di bawah ini:
+
+📥 **[Unduh Dokumen Laporan SRS Kelompok 4 Disini](docs/Laporan_SRS_Kelompok_4.pdf)**
