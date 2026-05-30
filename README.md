@@ -1,6 +1,5 @@
 # 🎮 GAMEZONE - Aplikasi Web Booking Rental PlayStation
 
-![GAMEZONE Screenshot](screenshot.png)
 
 **Proyek UAS:** Aplikasi Web Booking Rental PlayStation (GAMEZONE) berbasis _website_ responsif dengan fitur autentikasi, manajemen inventaris, dan sistem penyewaan (booking) jadwal.
 
@@ -14,6 +13,18 @@
 | **Hafidhin Adinata** | UI/UX Designer & Frontend Developer         |
 | **M. Risal**         | Database Administrator (DBA) & ERD Designer |
 | **Geraldhino**       | Backend Developer & API Integrator          |
+
+---
+
+### 📸 Cuplikan Tampilan Aplikasi
+
+<div align="center">
+  <img src="docs/home.jpeg" width="800" alt="Halaman Utama GameZone">
+  <br><br>
+  <img src="docs/admin.jpeg" width="800" alt="Dashboard Admin GameZone">
+  <br><br>
+  <img src="docs/lokasi.jpeg" width="800" alt="Peta Lokasi Rental">
+</div>
 
 ---
 
