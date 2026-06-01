@@ -58,6 +58,7 @@
                 </div>
                 <div>
                     <label class="block text-xs font-bold tracking-widest text-slate-400 mb-2 uppercase">Kata Sandi</label>
+                    <!-- Menambahkan fitur ikon mata untuk melihat kata sandi -->
                     <div class="relative w-full">
                         <input type="password" id="adminPassword" name="password" required placeholder="********" autocomplete="new-password" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-medium text-sm pr-12">
                         <button type="button" onclick="togglePassword()" class="absolute inset-y-0 right-0 flex items-center pr-4 text-slate-400 hover:text-white transition-colors focus:outline-none">
