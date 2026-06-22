@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi GAMEZONE</title>
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-dark: #4338CA;
+            --secondary: #1F2937;
+            --background: #F3F4F6;
+            --text: #111827;
+            --text-light: #4B5563;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), #000000);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+        }
+
+        header p {
+            margin-top: 1rem;
+            font-size: 1.25rem;
+            color: #D1D5DB;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+
+        .section:hover {
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid #E5E7EB;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--secondary);
+            margin-top: 2rem;
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
+            color: var(--text-light);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin: 1.5rem 0;
+            border: 1px solid #E5E7EB;
+        }
+
+        .team-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .team-table th, .team-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .team-table th {
+            background-color: #F9FAFB;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .team-table tr:hover {
+            background-color: #F9FAFB;
+        }
+
+        .badge {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <span class="badge">V1.0 Documentation</span>
+        <h1>GAMEZONE</h1>
+        <p>Aplikasi Web Booking Rental PlayStation</p>
+    </header>
+
+    <div class="container">
+        <!-- Section 1 -->
+        <div class="section">
+            <h2>1. Gambaran Umum Sistem</h2>
+            <p><strong>GAMEZONE</strong> adalah sebuah platform inovatif yang dirancang untuk memudahkan pelanggan dalam melakukan pemesanan (booking) jadwal sewa PlayStation (PS3, PS4, PS5) secara daring dan real-time.</p>
+            
+            <h3>Tujuan & Manfaat</h3>
+            <p>Manfaat utama dari sistem ini adalah membantu admin atau pengelola rental dalam memanajemen pelanggan, inventaris mesin PS, serta pencatatan histori transaksi secara otomatis dan efisien.</p>
+
+            <h3>Target Pengguna</h3>
+            <ul>
+                <li><strong>Pelanggan:</strong> Gamers atau masyarakat umum yang ingin menyewa PS.</li>
+                <li><strong>Admin/Pengelola:</strong> Pemilik atau staf tempat rental PlayStation.</li>
+            </ul>
+
+            <h3>Fitur Utama</h3>
+            <ul>
+                <li>🔐 Sistem Autentikasi & Multi-role (Admin dan Pelanggan)</li>
+                <li>📊 Dashboard Admin (Pengelolaan pelanggan & inventaris PS)</li>
+                <li>📅 Sistem Booking Jadwal Real-time</li>
+                <li>💰 Riwayat Transaksi & Kalkulasi Harga Otomatis</li>
+                <li>💬 WhatsApp Integration (Tombol chat langsung admin)</li>
+            </ul>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section">
+            <h2>2. Panduan Penggunaan Sistem</h2>
+            <p>Berikut adalah panduan tahapan penggunaan fitur pada aplikasi GAMEZONE secara berurutan:</p>
+
+            <h3>A. Halaman Utama & Katalog</h3>
+            <p>Setelah pelanggan berhasil login, akan muncul Halaman Utama (Home). Pada halaman ini, pelanggan dapat melihat katalog jenis PS yang disewakan, melihat status ketersediaan, serta informasi lokasi tempat rental.</p>
+            <img src="home.jpeg" alt="Halaman Utama GAMEZONE">
+
+            <h3>B. Sistem Booking (Pelanggan)</h3>
+            <p>Proses penyewaan sangat mudah dilakukan:</p>
+            <ol>
+                <li>Dari katalog di halaman utama, pilih jenis mesin PS (PS3, PS4, atau PS5).</li>
+                <li>Tentukan tanggal dan waktu mulai hingga waktu selesai (durasi sewa).</li>
+                <li>Sistem akan memvalidasi jadwal secara real-time. Jika mesin tersedia, harga total akan dikalkulasi otomatis.</li>
+                <li>Klik tombol <strong>"Booking"</strong>. Jika butuh bantuan, gunakan tombol WhatsApp untuk chat dengan admin.</li>
+            </ol>
+            <img src="lokasi.jpeg" alt="Peta Lokasi Rental">
+
+            <h3>C. Dashboard Manajemen (Admin)</h3>
+            <p>Admin memiliki kontrol penuh atas operasional rental melalui Dashboard khusus.</p>
+            <ul>
+                <li><strong>Manajemen Inventaris:</strong> Menambah, mengubah, atau menghapus mesin PS.</li>
+                <li><strong>Manajemen Pengguna:</strong> Melihat data pelanggan terdaftar.</li>
+                <li><strong>Riwayat Transaksi:</strong> Memantau semua transaksi masuk, dan memverifikasi pesanan.</li>
+            </ul>
+            <img src="admin.jpeg" alt="Dashboard Admin">
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section">
+            <h2>3. Tim Pengembang</h2>
+            <p>Proyek aplikasi web GAMEZONE ini dikembangkan dengan penuh dedikasi oleh <strong>Kelompok 4</strong>:</p>
+            
+            <table class="team-table">
+                <thead>
+                    <tr>
+                        <th>Nama Anggota</th>
+                        <th>Peran / Fokus Pekerjaan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Ruli</strong></td>
+                        <td>Project Manager & System Analyst</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hafidhin Adinata</strong></td>
+                        <td>UI/UX Designer & Frontend Developer</td>
+                    </tr>
+                    <tr>
+                        <td><strong>M. Risal</strong></td>
+                        <td>Database Administrator (DBA) & ERD Designer</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Geraldhino</strong></td>
+                        <td>Backend Developer & API Integrator</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 GAMEZONE Development Team. Dibuat untuk memenuhi Tugas Akhir Semester.</p>
+    </footer>
+
+</body>
+</html>
